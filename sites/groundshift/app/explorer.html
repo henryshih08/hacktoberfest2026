@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"><link rel="icon" href="/favicon.svg">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#f6f5ef">
+  <meta name="description" content="Explore historical aerial and satellite imagery across the United States. Choose a place and compare two moments in time.">
+  <title>Groundshift — A closer look at change</title>
+  <link rel="stylesheet" href="/style.css">
+  <link rel="stylesheet" href="/vendor/leaflet/leaflet.css">
+  <link rel="stylesheet" href="/explorer.css">
+</head>
+<body>
+<a class="skip-link" href="#selection">Skip to map</a>
+<header>
+  <a class="brand" href="/" aria-label="Groundshift home"><span class="brand-mark" aria-hidden="true">◒</span> groundshift</a>
+  <nav aria-label="Main navigation"><span class="header-note"><span class="status-dot"></span> A window into Earth's archive</span><button id="aboutButton" type="button">Sources &amp; method <span aria-hidden="true">↗</span></button></nav>
+</header>
+<main>
+  <section class="intro" aria-labelledby="pageTitle">
+    <div><p class="eyebrow">EARTH OBSERVATION · UNITED STATES</p><h1 id="pageTitle">A closer look <span>at change.</span></h1><p class="subtitle">Draw an area. Choose two dates. See the landscape change.</p></div>
+    <div class="archive-card"><span class="archive-icon" aria-hidden="true">◎</span><div><strong>Small details. Long histories.</strong><p>Aerial imagery from 30 cm<br>Satellite imagery at 10–30 m</p><small id="archiveRange">All 50 states · Archive since 1982</small></div></div>
+  </section>
+  <section class="selection" id="selection" aria-label="Choose an area and dates">
+    <div class="area-panel">
+      <div class="panel-heading"><span class="step">01</span><h2>Choose your area</h2><button id="usOverview" type="button">US overview <span aria-hidden="true">↗</span></button></div>
+      <div class="state-navigation"><label class="sr-only" for="stateNavigation">Go to a state</label><span aria-hidden="true">⌕</span><select id="stateNavigation"><option value="">Jump to a state, or explore the map</option></select><span class="navigation-tip">Scroll to zoom · Drag to pan</span></div>
+      <div class="area-map-wrap"><div id="areaMap" aria-label="Pan and zoom to select any US area"></div><div id="drawSurface" hidden aria-label="Drag to draw a selection rectangle"></div><div id="mapInstruction" class="map-instruction">Zoom in, then draw your area</div></div>
+      <div class="map-select-action"><button id="drawButton" type="button" class="primary" aria-pressed="false">▧ Draw area</button><button id="viewArea" type="button" disabled>Use visible map</button><p id="viewHint" role="status" aria-live="polite">Zoom in to a local area.</p></div>
+      <p id="areaHint" class="area-feedback" role="status" aria-live="polite"></p>
+    </div>
+    <div class="date-panel">
+      <div class="panel-heading"><span class="step">02</span><h2>Pick two moments</h2></div>
+      <div class="selection-summary"><span id="selectionCheck" class="selection-check" aria-hidden="true">◎</span><div><strong id="selectedAreaName">Your area goes here</strong><span id="selectedAreaSize">Draw a box on the map to get started.</span></div><button id="fitSelection" type="button" hidden>Locate ↗</button></div>
+      <form id="searchForm">
+        <label class="date-label" for="dateBefore"><span><i class="date-dot"></i> Before <small>Target date</small></span><input id="dateBefore" type="date" value="2018-09-01" min="1982-08-22" required></label>
+        <div class="date-connector" aria-hidden="true"><span></span> Time between your images <span></span></div>
+        <label class="date-label" for="dateAfter"><span><i class="date-dot filled"></i> After <small>Target date</small></span><input id="dateAfter" type="date" value="2026-10-01" min="1982-08-22" required></label>
+        <button class="primary" id="searchButton" type="submit">Find imagery <span aria-hidden="true">↗</span></button>
+      </form>
+      <div class="search-explainer"><span aria-hidden="true">ⓘ</span><p>Smaller areas load faster and show more detail. Capture dates may differ from your targets.</p></div>
+      <details class="search-details"><summary>How images are selected</summary><p>High-detail aerial imagery is preferred from your selected year. Otherwise, satellite passes are searched within ±45 days with less than 20% reported scene-wide cloud. NAIP aerial imagery follows a ≤10% cloud product standard; your crop’s cloud cover is not measured.</p><p id="sourceNotes" hidden></p></details>
+      <p id="searchStatus" role="status" aria-live="polite"></p>
+    </div>
+  </section>
+  <section class="results" id="results" hidden aria-labelledby="comparisonTitle">
+    <div class="results-heading"><div><p class="eyebrow">YOUR COMPARISON</p><h2 id="comparisonTitle">Selected area</h2></div><button class="export-button" id="downloadComparison" type="button" disabled>Save comparison notes <span aria-hidden="true">↓</span></button></div>
+    <div class="comparison-toolbar"><div class="mode-buttons" role="group" aria-label="Comparison view"><button id="swipeButton" type="button" class="active" aria-pressed="true">Swipe</button><button id="sideButton" type="button" aria-pressed="false">Side by side</button></div><div class="color-controls"><button id="matchColors" type="button" aria-pressed="true" disabled>✓ Match colors</button><span id="colorStatus" role="status">Display colors balanced for easier viewing.</span></div></div>
+    <div class="scene-selectors"><label for="beforeScene"><span><i class="date-dot"></i> Before <small>Available passes</small></span><select id="beforeScene" aria-describedby="passLegend"></select></label><label for="afterScene"><span><i class="date-dot filled"></i> After <small>Available passes</small></span><select id="afterScene" aria-describedby="passLegend"></select></label></div>
+    <aside class="pass-legend" id="passLegend" aria-labelledby="legendTitle"><h3 id="legendTitle">Reading a pass</h3><dl><div><dt>Date</dt><dd>Actual capture date. A range means several aerial flight dates.</dd></div><div><dt>Resolution</dt><dd>Meters per source pixel. A smaller number means finer detail.</dd></div><div><dt>Platform</dt><dd>The imagery source: NAIP aerial, Sentinel‑2, or Landsat.</dd></div><div><dt>Cloud</dt><dd>Satellite cloud is scene-wide (&lt;20%). NAIP’s ≤10% is a product standard, not a crop measurement.</dd></div><div><dt>Offset</dt><dd>Days from your target: − earlier, + later. No offset means the dates match.</dd></div></dl></aside>
+    <p id="selectionWarning" role="status"></p>
+    <div class="comparison-shell"><div id="comparison" class="comparison"><div id="afterLayer" class="image-layer"><img id="afterRaster" alt="Later acquisition"><span id="afterTag" class="image-date"></span></div><div id="beforeLayer" class="image-layer"><img id="beforeRaster" alt="Earlier acquisition"><span id="beforeTag" class="image-date"></span></div><div id="swipeLine" class="swipe-line"><span aria-hidden="true">‹ ›</span></div><input id="swipe" type="range" min="0" max="100" value="50" aria-label="Before and after comparison slider"><div id="imageStatus" role="status">Loading your images…</div></div></div>
+    <div class="comparison-caption"><span>USDA / Copernicus / USGS · CDFW / Microsoft Planetary Computer</span><span>Same geographic extent · Source imagery</span></div>
+    <div id="sceneFacts" class="scene-facts"></div>
+    <div class="caution"><span aria-hidden="true">ⓘ</span><p>Clouds, seasons, shadows, and missing pixels can resemble change. Check the original colors when interpreting vegetation or water. This viewer does not automatically detect changes.</p></div>
+  </section>
+  <section id="emptyState" class="empty-state"><span aria-hidden="true">◌</span><div><h2>Your comparison starts with a place.</h2><p>Select an area and two dates above. We’ll load just the imagery you need.</p></div><a href="/demo.html">Explore the Las Vegas example <span aria-hidden="true">↗</span></a></section>
+  <footer><a class="footer-brand" href="/">◒ groundshift</a><p>A closer look at a changing planet.</p><a href="/demo.html">Las Vegas case study ↗</a></footer>
+</main>
+<dialog id="aboutDialog"><button id="closeAbout" class="close" aria-label="Close">×</button><p class="eyebrow">SOURCES & METHOD</p><h2>Aerial detail. Satellite history.</h2><p>The viewer checks USDA’s current NAIP service, USGS The National Map, California’s archive, and the Planetary Computer historical catalogue. It prefers the finest native resolution available for your requested year, including 30 cm imagery in some locations. Coverage varies by state and year. These are aircraft photographs; exact flight dates or date ranges are shown, and a different year is never silently substituted.</p><p>USGS describes NAIP tiles as allowing at most 10% cloud cover under the product specification. We disclose this basis; a measured cloud percentage is not available for these tiles. Satellite fallbacks still require reported cloud cover strictly below 20%.</p><p>Color matching is on by default. It balances brightness, contrast, and color using both images’ overlapping valid pixels. It changes the display only and can reduce real color differences. Choose Original colors for interpretation of vegetation, water, or surface colors.</p><p>Recent imagery: <a href="https://dataspace.copernicus.eu/data-collections/copernicus-sentinel-missions/sentinel-2" target="_blank" rel="noreferrer">Copernicus Sentinel-2</a>. Historical imagery: USGS Landsat Collection 2 Level-2 is available through Microsoft Planetary Computer from August 22, 1982 onward. Coverage depends on satellite passes, processing, and location. New scenes may arrive after acquisition.</p><p>Groundshift searches a ±45-day window around your target dates, only includes scenes with less than 20% scene-wide cloud cover, and lists the nearest passes whose footprints cover your selected area. The two chosen scenes are rendered into the same geographic bounds and pixel grid. No scientific image registration or atmospheric normalization beyond the source product is added.</p><p>Recent dates use Copernicus Sentinel-2 L2A true-color imagery at 10-meter native resolution, available in this catalogue from June 27, 2015. Older dates use Landsat at 30 meters. If no qualifying Sentinel-2 pass covers the selection, the app explicitly labels its Landsat fallback. Aerial mosaics are rendered at up to 4,000 pixels per side (3,072 for Planetary Computer tiles); satellite images use up to 2,048 pixels. Output size follows native detail rather than adding invented detail. Smaller selections reveal more source detail. Native resolution still limits visible detail, and different sensors can look different. No change detection or annotations are inferred for arbitrary scenes.</p><p>The catalogue covers all 50 US states, including Alaska and Hawaii. Each selected map view is limited to 2° per axis and aerial images to a maximum side of 4,000 pixels. The basemap is current OpenStreetMap cartography, not historical imagery. The original reviewed Las Vegas example remains available separately.</p><p><a href="https://apps.geo.fpac.usda.gov/geo-imagery/rest/services/naip/conus_naip/ImageServer" target="_blank" rel="noreferrer">USDA NAIP service ↗</a> · <a href="https://imagery.nationalmap.gov/arcgis/rest/services/USGSNAIPImagery/ImageServer" target="_blank" rel="noreferrer">USGS aerial imagery ↗</a> · <a href="https://planetarycomputer.microsoft.com/dataset/landsat-c2-l2" target="_blank" rel="noreferrer">Landsat archive ↗</a> · <a href="https://www.usgs.gov/landsat-missions/landsat-collection-2-level-2-science-products" target="_blank" rel="noreferrer">USGS product details ↗</a></p></dialog>
+
+<script src="/vendor/leaflet/leaflet.js"></script>
+<script type="module" src="/explorer.js"></script>
+</body>
+</html>

@@ -1,0 +1,10 @@
+import test from 'node:test';
+import assert from 'node:assert/strict';
+import {answerQuestion,changes} from '../public/data.js';
+test('causal questions do not invent causes',()=>{assert.match(answerQuestion('Why was it built?','south').text,/cannot establish why/)});
+test('largest-area question does not invent measurements',()=>{const a=answerQuestion('Where has development expanded the most?');assert.equal(a.regionId,'northwest');assert.match(a.text,/cannot establish/)});
+test('vegetation questions acknowledge seasonal confounding',()=>{assert.match(answerQuestion('Were trees lost?').text,/Seasonal/)});
+test('road question selects the corridor despite prior selection',()=>{assert.equal(answerQuestion('What changed near the road?','northwest').regionId,'southwest')});
+test('selected region context works',()=>{assert.equal(answerQuestion('What changed here?','south').regionId,'south')});
+test('unknown questions stay within the evidence',()=>{assert.match(answerQuestion('What is tomorrow’s weather?').text,/three reviewed changes/)});
+test('every region stays inside image coordinates',()=>{for(const c of changes){const[x,y,w,h]=c.bounds;assert.ok(x>=0&&y>=0&&x+w<=100&&y+h<=100)}});

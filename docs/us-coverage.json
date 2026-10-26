@@ -1,0 +1,560 @@
+{
+  "checkedAt": "2026-10-25T22:14:51.339Z",
+  "collection": "USGS Landsat Collection 2 Level-2",
+  "provider": "Microsoft Planetary Computer",
+  "method": "One small bounding-box catalogue query per approximate state center for 2025. This verifies representative scene metadata, not every pixel or every date in a state.",
+  "available": 50,
+  "total": 50,
+  "results": [
+    {
+      "state": "Alabama",
+      "location": [
+        -86.8,
+        32.8
+      ],
+      "scene": "LC09_L2SP_020037_20251229_02_T1",
+      "date": "2025-12-29T16:19:21.648975Z",
+      "source": "https://planetarycomputer.microsoft.com/api/stac/v1/search?collections=landsat-c2-l2&bbox=-86.84%2C32.76%2C-86.75999999999999%2C32.839999999999996&datetime=2025-01-01T00%3A00%3A00Z%2F2025-12-31T23%3A59%3A59Z&limit=1&sortby=-datetime",
+      "status": "available"
+    },
+    {
+      "state": "Alaska",
+      "location": [
+        -147.7,
+        64.8
+      ],
+      "scene": "LC08_L2SP_068015_20251018_02_T2",
+      "date": "2025-10-18T21:07:05.682217Z",
+      "source": "https://planetarycomputer.microsoft.com/api/stac/v1/search?collections=landsat-c2-l2&bbox=-147.73999999999998%2C64.75999999999999%2C-147.66%2C64.84&datetime=2025-01-01T00%3A00%3A00Z%2F2025-12-31T23%3A59%3A59Z&limit=1&sortby=-datetime",
+      "status": "available"
+    },
+    {
+      "state": "Arizona",
+      "location": [
+        -111.7,
+        34.3
+      ],
+      "scene": "LC09_L2SP_036036_20251229_02_T1",
+      "date": "2025-12-29T17:57:50.905296Z",
+      "source": "https://planetarycomputer.microsoft.com/api/stac/v1/search?collections=landsat-c2-l2&bbox=-111.74000000000001%2C34.26%2C-111.66%2C34.339999999999996&datetime=2025-01-01T00%3A00%3A00Z%2F2025-12-31T23%3A59%3A59Z&limit=1&sortby=-datetime",
+      "status": "available"
+    },
+    {
+      "state": "Arkansas",
+      "location": [
+        -92.4,
+        34.9
+      ],
+      "scene": "LC09_L2SP_024036_20251225_02_T1",
+      "date": "2025-12-25T16:43:41.498608Z",
+      "source": "https://planetarycomputer.microsoft.com/api/stac/v1/search?collections=landsat-c2-l2&bbox=-92.44000000000001%2C34.86%2C-92.36%2C34.94&datetime=2025-01-01T00%3A00%3A00Z%2F2025-12-31T23%3A59%3A59Z&limit=1&sortby=-datetime",
+      "status": "available"
+    },
+    {
+      "state": "California",
+      "location": [
+        -119.8,
+        36.7
+      ],
+      "scene": "LC09_L2SP_043035_20251230_02_T1",
+      "date": "2025-12-30T18:40:42.381688Z",
+      "source": "https://planetarycomputer.microsoft.com/api/stac/v1/search?collections=landsat-c2-l2&bbox=-119.84%2C36.660000000000004%2C-119.75999999999999%2C36.74&datetime=2025-01-01T00%3A00%3A00Z%2F2025-12-31T23%3A59%3A59Z&limit=1&sortby=-datetime",
+      "status": "available"
+    },
+    {
+      "state": "Colorado",
+      "location": [
+        -105.5,
+        39
+      ],
+      "scene": "LC09_L2SP_034033_20251231_02_T1",
+      "date": "2025-12-31T17:44:16.815521Z",
+      "source": "https://planetarycomputer.microsoft.com/api/stac/v1/search?collections=landsat-c2-l2&bbox=-105.54%2C38.96%2C-105.46%2C39.04&datetime=2025-01-01T00%3A00%3A00Z%2F2025-12-31T23%3A59%3A59Z&limit=1&sortby=-datetime",
+      "status": "available"
+    },
+    {
+      "state": "Connecticut",
+      "location": [
+        -72.7,
+        41.6
+      ],
+      "scene": "LC09_L2SP_013031_20251228_02_T1",
+      "date": "2025-12-28T15:33:42.808417Z",
+      "source": "https://planetarycomputer.microsoft.com/api/stac/v1/search?collections=landsat-c2-l2&bbox=-72.74000000000001%2C41.56%2C-72.66%2C41.64&datetime=2025-01-01T00%3A00%3A00Z%2F2025-12-31T23%3A59%3A59Z&limit=1&sortby=-datetime",
+      "status": "available"
+    },
+    {
+      "state": "Delaware",
+      "location": [
+        -75.5,
+        39
+      ],
+      "scene": "LC09_L2SP_014033_20251219_02_T1",
+      "date": "2025-12-19T15:40:40.086490Z",
+      "source": "https://planetarycomputer.microsoft.com/api/stac/v1/search?collections=landsat-c2-l2&bbox=-75.54%2C38.96%2C-75.46%2C39.04&datetime=2025-01-01T00%3A00%3A00Z%2F2025-12-31T23%3A59%3A59Z&limit=1&sortby=-datetime",
+      "status": "available"
+    },
+    {
+      "state": "Florida",
+      "location": [
+        -82,
+        28.3
+      ],
+      "scene": "LC09_L2SP_017040_20251224_02_T1",
+      "date": "2025-12-24T16:02:01.195385Z",
+      "source": "https://planetarycomputer.microsoft.com/api/stac/v1/search?collections=landsat-c2-l2&bbox=-82.04%2C28.26%2C-81.96%2C28.34&datetime=2025-01-01T00%3A00%3A00Z%2F2025-12-31T23%3A59%3A59Z&limit=1&sortby=-datetime",
+      "status": "available"
+    },
+    {
+      "state": "Georgia",
+      "location": [
+        -83.4,
+        32.6
+      ],
+      "scene": "LC09_L2SP_018038_20251231_02_T1",
+      "date": "2025-12-31T16:07:23.127492Z",
+      "source": "https://planetarycomputer.microsoft.com/api/stac/v1/search?collections=landsat-c2-l2&bbox=-83.44000000000001%2C32.56%2C-83.36%2C32.64&datetime=2025-01-01T00%3A00%3A00Z%2F2025-12-31T23%3A59%3A59Z&limit=1&sortby=-datetime",
+      "status": "available"
+    },
+    {
+      "state": "Hawaii",
+      "location": [
+        -156.4,
+        20.9
+      ],
+      "scene": "LC09_L2SP_063046_20251226_02_T1",
+      "date": "2025-12-26T20:48:42.295368Z",
+      "source": "https://planetarycomputer.microsoft.com/api/stac/v1/search?collections=landsat-c2-l2&bbox=-156.44%2C20.86%2C-156.36%2C20.939999999999998&datetime=2025-01-01T00%3A00%3A00Z%2F2025-12-31T23%3A59%3A59Z&limit=1&sortby=-datetime",
+      "status": "available"
+    },
+    {
+      "state": "Idaho",
+      "location": [
+        -114.4,
+        44.2
+      ],
+      "scene": "LC09_L2SP_040029_20251225_02_T1",
+      "date": "2025-12-25T18:19:47.413072Z",
+      "source": "https://planetarycomputer.microsoft.com/api/stac/v1/search?collections=landsat-c2-l2&bbox=-114.44000000000001%2C44.160000000000004%2C-114.36%2C44.24&datetime=2025-01-01T00%3A00%3A00Z%2F2025-12-31T23%3A59%3A59Z&limit=1&sortby=-datetime",
+      "status": "available"
+    },
+    {
+      "state": "Illinois",
+      "location": [
+        -89.2,
+        40
+      ],
+      "scene": "LC09_L2SP_023032_20251218_02_T2",
+      "date": "2025-12-18T16:35:53.195980Z",
+      "source": "https://planetarycomputer.microsoft.com/api/stac/v1/search?collections=landsat-c2-l2&bbox=-89.24000000000001%2C39.96%2C-89.16%2C40.04&datetime=2025-01-01T00%3A00%3A00Z%2F2025-12-31T23%3A59%3A59Z&limit=1&sortby=-datetime",
+      "status": "available"
+    },
+    {
+      "state": "Indiana",
+      "location": [
+        -86.3,
+        39.9
+      ],
+      "scene": "LC09_L2SP_022032_20251227_02_T2",
+      "date": "2025-12-27T16:29:44.233687Z",
+      "source": "https://planetarycomputer.microsoft.com/api/stac/v1/search?collections=landsat-c2-l2&bbox=-86.34%2C39.86%2C-86.25999999999999%2C39.94&datetime=2025-01-01T00%3A00%3A00Z%2F2025-12-31T23%3A59%3A59Z&limit=1&sortby=-datetime",
+      "status": "available"
+    },
+    {
+      "state": "Iowa",
+      "location": [
+        -93.5,
+        42.1
+      ],
+      "scene": "LC09_L2SP_027031_20251230_02_T1",
+      "date": "2025-12-30T17:00:13.763479Z",
+      "source": "https://planetarycomputer.microsoft.com/api/stac/v1/search?collections=landsat-c2-l2&bbox=-93.54%2C42.06%2C-93.46%2C42.14&datetime=2025-01-01T00%3A00%3A00Z%2F2025-12-31T23%3A59%3A59Z&limit=1&sortby=-datetime",
+      "status": "available"
+    },
+    {
+      "state": "Kansas",
+      "location": [
+        -98,
+        38.5
+      ],
+      "scene": "LC09_L2SP_029033_20251228_02_T2",
+      "date": "2025-12-28T17:13:23.746256Z",
+      "source": "https://planetarycomputer.microsoft.com/api/stac/v1/search?collections=landsat-c2-l2&bbox=-98.04%2C38.46%2C-97.96%2C38.54&datetime=2025-01-01T00%3A00%3A00Z%2F2025-12-31T23%3A59%3A59Z&limit=1&sortby=-datetime",
+      "status": "available"
+    },
+    {
+      "state": "Kentucky",
+      "location": [
+        -85.3,
+        37.6
+      ],
+      "scene": "LC09_L2SP_020034_20251229_02_T1",
+      "date": "2025-12-29T16:18:09.980163Z",
+      "source": "https://planetarycomputer.microsoft.com/api/stac/v1/search?collections=landsat-c2-l2&bbox=-85.34%2C37.56%2C-85.25999999999999%2C37.64&datetime=2025-01-01T00%3A00%3A00Z%2F2025-12-31T23%3A59%3A59Z&limit=1&sortby=-datetime",
+      "status": "available"
+    },
+    {
+      "state": "Louisiana",
+      "location": [
+        -92.3,
+        31.2
+      ],
+      "scene": "LC09_L2SP_024038_20251225_02_T2",
+      "date": "2025-12-25T16:44:29.280638Z",
+      "source": "https://planetarycomputer.microsoft.com/api/stac/v1/search?collections=landsat-c2-l2&bbox=-92.34%2C31.16%2C-92.25999999999999%2C31.24&datetime=2025-01-01T00%3A00%3A00Z%2F2025-12-31T23%3A59%3A59Z&limit=1&sortby=-datetime",
+      "status": "available"
+    },
+    {
+      "state": "Maine",
+      "location": [
+        -69.1,
+        45.3
+      ],
+      "scene": "LC09_L2SP_011029_20251230_02_T1",
+      "date": "2025-12-30T15:20:32.842581Z",
+      "source": "https://planetarycomputer.microsoft.com/api/stac/v1/search?collections=landsat-c2-l2&bbox=-69.14%2C45.26%2C-69.05999999999999%2C45.339999999999996&datetime=2025-01-01T00%3A00%3A00Z%2F2025-12-31T23%3A59%3A59Z&limit=1&sortby=-datetime",
+      "status": "available"
+    },
+    {
+      "state": "Maryland",
+      "location": [
+        -76.7,
+        39
+      ],
+      "scene": "LC09_L2SP_015033_20251226_02_T1",
+      "date": "2025-12-26T15:46:52.409932Z",
+      "source": "https://planetarycomputer.microsoft.com/api/stac/v1/search?collections=landsat-c2-l2&bbox=-76.74000000000001%2C38.96%2C-76.66%2C39.04&datetime=2025-01-01T00%3A00%3A00Z%2F2025-12-31T23%3A59%3A59Z&limit=1&sortby=-datetime",
+      "status": "available"
+    },
+    {
+      "state": "Massachusetts",
+      "location": [
+        -71.8,
+        42.3
+      ],
+      "scene": "LC09_L2SP_013031_20251228_02_T1",
+      "date": "2025-12-28T15:33:42.808417Z",
+      "source": "https://planetarycomputer.microsoft.com/api/stac/v1/search?collections=landsat-c2-l2&bbox=-71.84%2C42.26%2C-71.75999999999999%2C42.339999999999996&datetime=2025-01-01T00%3A00%3A00Z%2F2025-12-31T23%3A59%3A59Z&limit=1&sortby=-datetime",
+      "status": "available"
+    },
+    {
+      "state": "Michigan",
+      "location": [
+        -85.6,
+        44.3
+      ],
+      "scene": "LC09_L2SP_022029_20251227_02_T2",
+      "date": "2025-12-27T16:28:32.581821Z",
+      "source": "https://planetarycomputer.microsoft.com/api/stac/v1/search?collections=landsat-c2-l2&bbox=-85.64%2C44.26%2C-85.55999999999999%2C44.339999999999996&datetime=2025-01-01T00%3A00%3A00Z%2F2025-12-31T23%3A59%3A59Z&limit=1&sortby=-datetime",
+      "status": "available"
+    },
+    {
+      "state": "Minnesota",
+      "location": [
+        -94.6,
+        46
+      ],
+      "scene": "LC09_L2SP_028028_20251221_02_T1",
+      "date": "2025-12-21T17:05:12.971657Z",
+      "source": "https://planetarycomputer.microsoft.com/api/stac/v1/search?collections=landsat-c2-l2&bbox=-94.64%2C45.96%2C-94.55999999999999%2C46.04&datetime=2025-01-01T00%3A00%3A00Z%2F2025-12-31T23%3A59%3A59Z&limit=1&sortby=-datetime",
+      "status": "available"
+    },
+    {
+      "state": "Mississippi",
+      "location": [
+        -89.7,
+        32.7
+      ],
+      "scene": "LC09_L2SP_022037_20251227_02_T2",
+      "date": "2025-12-27T16:31:43.680294Z",
+      "source": "https://planetarycomputer.microsoft.com/api/stac/v1/search?collections=landsat-c2-l2&bbox=-89.74000000000001%2C32.660000000000004%2C-89.66%2C32.74&datetime=2025-01-01T00%3A00%3A00Z%2F2025-12-31T23%3A59%3A59Z&limit=1&sortby=-datetime",
+      "status": "available"
+    },
+    {
+      "state": "Missouri",
+      "location": [
+        -92.5,
+        38.5
+      ],
+      "scene": "LC09_L2SP_025033_20251216_02_T1",
+      "date": "2025-12-16T16:48:37.703475Z",
+      "source": "https://planetarycomputer.microsoft.com/api/stac/v1/search?collections=landsat-c2-l2&bbox=-92.54%2C38.46%2C-92.46%2C38.54&datetime=2025-01-01T00%3A00%3A00Z%2F2025-12-31T23%3A59%3A59Z&limit=1&sortby=-datetime",
+      "status": "available"
+    },
+    {
+      "state": "Montana",
+      "location": [
+        -109.6,
+        47
+      ],
+      "scene": "LC09_L2SP_038027_20251227_02_T1",
+      "date": "2025-12-27T18:06:37.947129Z",
+      "source": "https://planetarycomputer.microsoft.com/api/stac/v1/search?collections=landsat-c2-l2&bbox=-109.64%2C46.96%2C-109.55999999999999%2C47.04&datetime=2025-01-01T00%3A00%3A00Z%2F2025-12-31T23%3A59%3A59Z&limit=1&sortby=-datetime",
+      "status": "available"
+    },
+    {
+      "state": "Nebraska",
+      "location": [
+        -99.8,
+        41.5
+      ],
+      "scene": "LC09_L2SP_031031_20251226_02_T1",
+      "date": "2025-12-26T17:24:57.813365Z",
+      "source": "https://planetarycomputer.microsoft.com/api/stac/v1/search?collections=landsat-c2-l2&bbox=-99.84%2C41.46%2C-99.75999999999999%2C41.54&datetime=2025-01-01T00%3A00%3A00Z%2F2025-12-31T23%3A59%3A59Z&limit=1&sortby=-datetime",
+      "status": "available"
+    },
+    {
+      "state": "Nevada",
+      "location": [
+        -116.6,
+        39.3
+      ],
+      "scene": "LC09_L2SP_041033_20251216_02_T1",
+      "date": "2025-12-16T18:27:30.859284Z",
+      "source": "https://planetarycomputer.microsoft.com/api/stac/v1/search?collections=landsat-c2-l2&bbox=-116.64%2C39.26%2C-116.55999999999999%2C39.339999999999996&datetime=2025-01-01T00%3A00%3A00Z%2F2025-12-31T23%3A59%3A59Z&limit=1&sortby=-datetime",
+      "status": "available"
+    },
+    {
+      "state": "New Hampshire",
+      "location": [
+        -71.6,
+        43.8
+      ],
+      "scene": "LC09_L2SP_013030_20251228_02_T1",
+      "date": "2025-12-28T15:33:18.921636Z",
+      "source": "https://planetarycomputer.microsoft.com/api/stac/v1/search?collections=landsat-c2-l2&bbox=-71.64%2C43.76%2C-71.55999999999999%2C43.839999999999996&datetime=2025-01-01T00%3A00%3A00Z%2F2025-12-31T23%3A59%3A59Z&limit=1&sortby=-datetime",
+      "status": "available"
+    },
+    {
+      "state": "New Jersey",
+      "location": [
+        -74.5,
+        40.1
+      ],
+      "scene": "LC09_L2SP_013032_20251228_02_T1",
+      "date": "2025-12-28T15:34:06.695196Z",
+      "source": "https://planetarycomputer.microsoft.com/api/stac/v1/search?collections=landsat-c2-l2&bbox=-74.54%2C40.06%2C-74.46%2C40.14&datetime=2025-01-01T00%3A00%3A00Z%2F2025-12-31T23%3A59%3A59Z&limit=1&sortby=-datetime",
+      "status": "available"
+    },
+    {
+      "state": "New Mexico",
+      "location": [
+        -106.1,
+        34.4
+      ],
+      "scene": "LC09_L2SP_033036_20251224_02_T1",
+      "date": "2025-12-24T17:39:18.812551Z",
+      "source": "https://planetarycomputer.microsoft.com/api/stac/v1/search?collections=landsat-c2-l2&bbox=-106.14%2C34.36%2C-106.05999999999999%2C34.44&datetime=2025-01-01T00%3A00%3A00Z%2F2025-12-31T23%3A59%3A59Z&limit=1&sortby=-datetime",
+      "status": "available"
+    },
+    {
+      "state": "New York",
+      "location": [
+        -75.5,
+        42.9
+      ],
+      "scene": "LC09_L2SP_015030_20251226_02_T2",
+      "date": "2025-12-26T15:45:40.753830Z",
+      "source": "https://planetarycomputer.microsoft.com/api/stac/v1/search?collections=landsat-c2-l2&bbox=-75.54%2C42.86%2C-75.46%2C42.94&datetime=2025-01-01T00%3A00%3A00Z%2F2025-12-31T23%3A59%3A59Z&limit=1&sortby=-datetime",
+      "status": "available"
+    },
+    {
+      "state": "North Carolina",
+      "location": [
+        -79.8,
+        35.6
+      ],
+      "scene": "LC09_L2SP_016035_20251217_02_T1",
+      "date": "2025-12-17T15:53:48.573948Z",
+      "source": "https://planetarycomputer.microsoft.com/api/stac/v1/search?collections=landsat-c2-l2&bbox=-79.84%2C35.56%2C-79.75999999999999%2C35.64&datetime=2025-01-01T00%3A00%3A00Z%2F2025-12-31T23%3A59%3A59Z&limit=1&sortby=-datetime",
+      "status": "available"
+    },
+    {
+      "state": "North Dakota",
+      "location": [
+        -100.5,
+        47.5
+      ],
+      "scene": "LC09_L2SP_033027_20251224_02_T1",
+      "date": "2025-12-24T17:35:43.827297Z",
+      "source": "https://planetarycomputer.microsoft.com/api/stac/v1/search?collections=landsat-c2-l2&bbox=-100.54%2C47.46%2C-100.46%2C47.54&datetime=2025-01-01T00%3A00%3A00Z%2F2025-12-31T23%3A59%3A59Z&limit=1&sortby=-datetime",
+      "status": "available"
+    },
+    {
+      "state": "Ohio",
+      "location": [
+        -82.8,
+        40.4
+      ],
+      "scene": "LC09_L2SP_019032_20251222_02_T1",
+      "date": "2025-12-22T16:11:11.353043Z",
+      "source": "https://planetarycomputer.microsoft.com/api/stac/v1/search?collections=landsat-c2-l2&bbox=-82.84%2C40.36%2C-82.75999999999999%2C40.44&datetime=2025-01-01T00%3A00%3A00Z%2F2025-12-31T23%3A59%3A59Z&limit=1&sortby=-datetime",
+      "status": "available"
+    },
+    {
+      "state": "Oklahoma",
+      "location": [
+        -97.5,
+        35.6
+      ],
+      "scene": "LC09_L2SP_027036_20251230_02_T1",
+      "date": "2025-12-30T17:02:13.205848Z",
+      "source": "https://planetarycomputer.microsoft.com/api/stac/v1/search?collections=landsat-c2-l2&bbox=-97.54%2C35.56%2C-97.46%2C35.64&datetime=2025-01-01T00%3A00%3A00Z%2F2025-12-31T23%3A59%3A59Z&limit=1&sortby=-datetime",
+      "status": "available"
+    },
+    {
+      "state": "Oregon",
+      "location": [
+        -120.5,
+        44.1
+      ],
+      "scene": "LC09_L2SP_045029_20251228_02_T1",
+      "date": "2025-12-28T18:50:41.278699Z",
+      "source": "https://planetarycomputer.microsoft.com/api/stac/v1/search?collections=landsat-c2-l2&bbox=-120.54%2C44.06%2C-120.46%2C44.14&datetime=2025-01-01T00%3A00%3A00Z%2F2025-12-31T23%3A59%3A59Z&limit=1&sortby=-datetime",
+      "status": "available"
+    },
+    {
+      "state": "Pennsylvania",
+      "location": [
+        -77.8,
+        40.9
+      ],
+      "scene": "LC09_L2SP_016032_20251217_02_T1",
+      "date": "2025-12-17T15:52:36.909372Z",
+      "source": "https://planetarycomputer.microsoft.com/api/stac/v1/search?collections=landsat-c2-l2&bbox=-77.84%2C40.86%2C-77.75999999999999%2C40.94&datetime=2025-01-01T00%3A00%3A00Z%2F2025-12-31T23%3A59%3A59Z&limit=1&sortby=-datetime",
+      "status": "available"
+    },
+    {
+      "state": "Rhode Island",
+      "location": [
+        -71.5,
+        41.7
+      ],
+      "scene": "LC09_L2SP_012031_20251221_02_T1",
+      "date": "2025-12-21T15:27:31.429590Z",
+      "source": "https://planetarycomputer.microsoft.com/api/stac/v1/search?collections=landsat-c2-l2&bbox=-71.54%2C41.660000000000004%2C-71.46%2C41.74&datetime=2025-01-01T00%3A00%3A00Z%2F2025-12-31T23%3A59%3A59Z&limit=1&sortby=-datetime",
+      "status": "available"
+    },
+    {
+      "state": "South Carolina",
+      "location": [
+        -80.9,
+        33.9
+      ],
+      "scene": "LC09_L2SP_017037_20251224_02_T1",
+      "date": "2025-12-24T16:00:49.513867Z",
+      "source": "https://planetarycomputer.microsoft.com/api/stac/v1/search?collections=landsat-c2-l2&bbox=-80.94000000000001%2C33.86%2C-80.86%2C33.94&datetime=2025-01-01T00%3A00%3A00Z%2F2025-12-31T23%3A59%3A59Z&limit=1&sortby=-datetime",
+      "status": "available"
+    },
+    {
+      "state": "South Dakota",
+      "location": [
+        -100.2,
+        44.4
+      ],
+      "scene": "LC09_L2SP_031029_20251226_02_T1",
+      "date": "2025-12-26T17:24:10.044041Z",
+      "source": "https://planetarycomputer.microsoft.com/api/stac/v1/search?collections=landsat-c2-l2&bbox=-100.24000000000001%2C44.36%2C-100.16%2C44.44&datetime=2025-01-01T00%3A00%3A00Z%2F2025-12-31T23%3A59%3A59Z&limit=1&sortby=-datetime",
+      "status": "available"
+    },
+    {
+      "state": "Tennessee",
+      "location": [
+        -86.4,
+        35.9
+      ],
+      "scene": "LC09_L2SP_020035_20251229_02_T1",
+      "date": "2025-12-29T16:18:33.871179Z",
+      "source": "https://planetarycomputer.microsoft.com/api/stac/v1/search?collections=landsat-c2-l2&bbox=-86.44000000000001%2C35.86%2C-86.36%2C35.94&datetime=2025-01-01T00%3A00%3A00Z%2F2025-12-31T23%3A59%3A59Z&limit=1&sortby=-datetime",
+      "status": "available"
+    },
+    {
+      "state": "Texas",
+      "location": [
+        -99.3,
+        31
+      ],
+      "scene": "LC09_L2SP_028039_20251221_02_T1",
+      "date": "2025-12-21T17:09:35.743176Z",
+      "source": "https://planetarycomputer.microsoft.com/api/stac/v1/search?collections=landsat-c2-l2&bbox=-99.34%2C30.96%2C-99.25999999999999%2C31.04&datetime=2025-01-01T00%3A00%3A00Z%2F2025-12-31T23%3A59%3A59Z&limit=1&sortby=-datetime",
+      "status": "available"
+    },
+    {
+      "state": "Utah",
+      "location": [
+        -111.7,
+        39.3
+      ],
+      "scene": "LC09_L2SP_038033_20251227_02_T1",
+      "date": "2025-12-27T18:09:01.263570Z",
+      "source": "https://planetarycomputer.microsoft.com/api/stac/v1/search?collections=landsat-c2-l2&bbox=-111.74000000000001%2C39.26%2C-111.66%2C39.339999999999996&datetime=2025-01-01T00%3A00%3A00Z%2F2025-12-31T23%3A59%3A59Z&limit=1&sortby=-datetime",
+      "status": "available"
+    },
+    {
+      "state": "Vermont",
+      "location": [
+        -72.7,
+        44.1
+      ],
+      "scene": "LC09_L2SP_013030_20251228_02_T1",
+      "date": "2025-12-28T15:33:18.921636Z",
+      "source": "https://planetarycomputer.microsoft.com/api/stac/v1/search?collections=landsat-c2-l2&bbox=-72.74000000000001%2C44.06%2C-72.66%2C44.14&datetime=2025-01-01T00%3A00%3A00Z%2F2025-12-31T23%3A59%3A59Z&limit=1&sortby=-datetime",
+      "status": "available"
+    },
+    {
+      "state": "Virginia",
+      "location": [
+        -78.9,
+        37.5
+      ],
+      "scene": "LC09_L2SP_016034_20251217_02_T1",
+      "date": "2025-12-17T15:53:24.678696Z",
+      "source": "https://planetarycomputer.microsoft.com/api/stac/v1/search?collections=landsat-c2-l2&bbox=-78.94000000000001%2C37.46%2C-78.86%2C37.54&datetime=2025-01-01T00%3A00%3A00Z%2F2025-12-31T23%3A59%3A59Z&limit=1&sortby=-datetime",
+      "status": "available"
+    },
+    {
+      "state": "Washington",
+      "location": [
+        -120.7,
+        47.4
+      ],
+      "scene": "LC09_L2SP_045027_20251228_02_T1",
+      "date": "2025-12-28T18:49:53.513612Z",
+      "source": "https://planetarycomputer.microsoft.com/api/stac/v1/search?collections=landsat-c2-l2&bbox=-120.74000000000001%2C47.36%2C-120.66%2C47.44&datetime=2025-01-01T00%3A00%3A00Z%2F2025-12-31T23%3A59%3A59Z&limit=1&sortby=-datetime",
+      "status": "available"
+    },
+    {
+      "state": "West Virginia",
+      "location": [
+        -80.6,
+        38.6
+      ],
+      "scene": "LC09_L2SP_018033_20251231_02_T2",
+      "date": "2025-12-31T16:05:23.680887Z",
+      "source": "https://planetarycomputer.microsoft.com/api/stac/v1/search?collections=landsat-c2-l2&bbox=-80.64%2C38.56%2C-80.55999999999999%2C38.64&datetime=2025-01-01T00%3A00%3A00Z%2F2025-12-31T23%3A59%3A59Z&limit=1&sortby=-datetime",
+      "status": "available"
+    },
+    {
+      "state": "Wisconsin",
+      "location": [
+        -89.7,
+        44.6
+      ],
+      "scene": "LC09_L2SP_024029_20251225_02_T2",
+      "date": "2025-12-25T16:40:54.286914Z",
+      "source": "https://planetarycomputer.microsoft.com/api/stac/v1/search?collections=landsat-c2-l2&bbox=-89.74000000000001%2C44.56%2C-89.66%2C44.64&datetime=2025-01-01T00%3A00%3A00Z%2F2025-12-31T23%3A59%3A59Z&limit=1&sortby=-datetime",
+      "status": "available"
+    },
+    {
+      "state": "Wyoming",
+      "location": [
+        -107.6,
+        43
+      ],
+      "scene": "LC09_L2SP_036030_20251229_02_T1",
+      "date": "2025-12-29T17:55:27.576146Z",
+      "source": "https://planetarycomputer.microsoft.com/api/stac/v1/search?collections=landsat-c2-l2&bbox=-107.64%2C42.96%2C-107.55999999999999%2C43.04&datetime=2025-01-01T00%3A00%3A00Z%2F2025-12-31T23%3A59%3A59Z&limit=1&sortby=-datetime",
+      "status": "available"
+    }
+  ]
+}
